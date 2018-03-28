@@ -1,0 +1,17 @@
+{
+  "name": "suntiejun",
+  "authors": [
+    "孙铁军 <tiejun.sun@happylifeplat.com>"
+  ],
+  "description": "srs player",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

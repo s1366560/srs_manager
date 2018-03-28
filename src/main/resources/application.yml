@@ -1,0 +1,15 @@
+server:
+  address: localhost
+  servlet:
+    path: /srs
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/srs_player?characterEncoding=utf8&useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
