@@ -1,15 +1,17 @@
 package com.stream.srs.domain;
 
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class Video {
+public class Video implements Serializable {
+
+    private static final long serialVersionUID = 1727932099638998838L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
