@@ -1,7 +1,7 @@
 server:
   address: localhost
   servlet:
-    path: /srs
+    path: /
 
 spring:
   datasource:
@@ -13,3 +13,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+srs:
+  allow:
+    - localhost
+    - 127.0.0.1
+    - 192.168.1.201
