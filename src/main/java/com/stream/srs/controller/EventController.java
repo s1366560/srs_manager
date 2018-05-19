@@ -15,7 +15,7 @@ public class EventController {
 
     @RequestMapping("/event")
     public int publish(@RequestBody EventRequest request){
-        if(property.getAllow().contains(request.getIp()))
+        if(property.getAllow().contains(request.getIp()) || property.getAllow().contains(request.getStream()))
             return 0;
         return -1;
     }
