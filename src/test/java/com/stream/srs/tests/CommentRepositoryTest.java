@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
@@ -54,9 +53,8 @@ public class CommentRepositoryTest {
     @Test
     public void pageTest(){
 
-        Pageable page = new PageRequest(0,10);
 
-        Page<Comment> page1 = commentRepository.findByVideoId(1,page);
+        Page<Comment> page1 = commentRepository.findByVideoId(1,PageRequest.of(0,10));
 
         assertEquals(10,page1.getSize());
 
