@@ -15,6 +15,9 @@ spring:
     show-sql: true
 srs:
   allow:
-    - localhost
-    - 127.0.0.1
-    - 192.168.1.201
+   - stream1
+   - stream2
+   - stream3
+   - stream4
+   - stream5
+   - stream6
