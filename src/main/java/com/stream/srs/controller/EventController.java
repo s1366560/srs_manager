@@ -15,7 +15,10 @@ public class EventController {
 
     @RequestMapping("/event")
     public int publish(@RequestBody EventRequest request){
-        return 0;
+        if(property.getAllow().contains(request.getStream())){
+            return 0;
+        }
+        return -1;
     }
 
 
